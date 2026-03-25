@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-// Usamos namespace para tener que importar a mano todos los modelos que hay
+// Usamos namespace para tener que importar a mano todos los modelos que hayr
 namespace App\Models;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
