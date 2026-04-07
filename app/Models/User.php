@@ -82,6 +82,13 @@ class User extends Authenticatable
         return $this->perfilesHabilitacion()
                     ->where('ecosistema_laboral_id', $ecosistema->id)
                     ->first();
-}
+    }
+
+    // Método helper que consulta la relación roles y devuelve true/false
+    public function hasRole(string $role): bool
+    {
+        // Se usa la relación 'userRoles' definida en el modelo User
+        return $this->userRoles()->where('name', $role)->exists();
+    }
 
 }
