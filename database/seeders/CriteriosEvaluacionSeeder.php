@@ -51,7 +51,7 @@ class CriteriosEvaluacionSeeder extends Seeder
 
             $data[] = [
                 'resultado_aprendizaje_id' => $resultadoId ,
-                'codigo' => trim($rec['id_criterio'] ?? ''),
+                'codigo' => "CE" . trim($rec['id_ra'] ?? '') . trim($rec['id_criterio'] ?? ''),
                 'descripcion' => $rec['definicion'] ?? null,
                 'created_at' => now(),
                 'updated_at' => now(),
