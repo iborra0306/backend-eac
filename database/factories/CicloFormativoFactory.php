@@ -2,14 +2,14 @@
 
 namespace Database\Factories;
 
-use App\Models\EcosistemaLaboral;
-use App\Models\Modulo;
+use App\Models\CicloFormativo;
+use App\Models\FamiliaProfesional;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<EcosistemaLaboral>
+ * @extends Factory<CicloFormativo>
  */
-class EcosistemaLaboralFactory extends Factory
+class CicloFormativoFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -19,12 +19,11 @@ class EcosistemaLaboralFactory extends Factory
     public function definition(): array
     {
         return [
-            'modulo_id' => Modulo::factory(),
+            'familia_profesional_id' => fn() => FamiliaProfesional::factory()->create()->id,
             'nombre' => $this->faker->sentence(3),
             'codigo' => $this->faker->unique()->bothify('####'),
+            'grado' => $this->faker->randomElement(['GB', 'GM', 'GS']),
             'descripcion' => $this->faker->paragraph(),
-            // Lo creo como activo para que pase el controlador
-            'activo' => true,
         ];
     }
 }
