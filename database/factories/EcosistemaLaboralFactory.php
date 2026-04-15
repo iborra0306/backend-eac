@@ -18,7 +18,11 @@ class EcosistemaLaboralFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            // modulo_id => \App\Models
+            // nombre
+            // codigo
+            // descripcion
+            // activo
         ];
     }
 }
