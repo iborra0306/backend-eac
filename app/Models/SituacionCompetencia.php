@@ -27,7 +27,7 @@ class SituacionCompetencia extends Model
 
     //Relación con NodoRequisito (hasMany)
 
-    public function nodoRequisito (): HasMany
+    public function nodosRequisito (): HasMany
     {
         return $this->hasMany(NodoRequisito::class);
     }
