@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             ModulosSeeder::class,
             ResultadosAprendizajeSeeder::class,
             CriteriosEvaluacionSeeder::class,
+            EcosistemaLaboralSeeder::class,
         ]);
 
         // User::factory(10)->create();
