@@ -34,7 +34,13 @@
                     <p class="text-xs text-gray-400">Estudiantes</p>
                 </div>
             </div>
+
+
         </div>
+        <a href="{{ route('docente.ecosistemas.analytics', $ecosistema) }}"
+                    class="btn btn-outline-primary btn-sm text-black">
+                    📊 Ver analítica
+                </a>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">

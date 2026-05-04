@@ -29,6 +29,10 @@
            class="text-sm text-gray-400 hover:text-gray-600 underline">
             Ver detalle del módulo
         </a>
+        <a href="{{ route('estudiante.huella-radar', $perfil->ecosistemaLaboral) }}"
+        class="btn btn-outline-indigo btn-sm">
+            🎯 Ver mi Huella de Talento
+        </a>
     </div>
 
     {{-- Baner de recomendación (solo si la ZDP no está vacía) --}}
